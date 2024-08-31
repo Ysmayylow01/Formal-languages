@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baccolor"
+    tools:context=".SplashScreen">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logoicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+
+    <com.romainpiel.shimmer.ShimmerTextView
+        android:id="@+id/shimmerTv"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/mitr_regular"
+        android:text="@string/splash"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:reflectionColor="#F8F8F5" />
+
+    <com.agrawalsuneet.dotsloader.loaders.CircularDotsLoader
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shimmerTv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:loader_animDur="100"
+        app:loader_bigCircleRadius="20dp"
+        app:loader_circleRadius="6dp"
+        app:loader_defaultColor="#70BEF6"
+        app:loader_firstShadowColor="#BFE0FA"
+        app:loader_secondShadowColor="#BFE0FA"
+        app:loader_selectedColor="#70BEF6"
+        app:loader_showRunningShadow="true" />
+
+</RelativeLayout>

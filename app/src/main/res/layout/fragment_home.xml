@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/baccolor"
+    tools:context=".fragments.HomeFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="224dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/oguz"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="250dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/preCard"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/programming" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/mitr_regular"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Preliminaries languages"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                tools:ignore="RtlCompat" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/regCard"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/programming" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/mitr_regular"
+                android:paddingStart="30dp"
+                android:paddingEnd="15dp"
+                android:text="@string/regular"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="14dp"
+                tools:ignore="RtlCompat" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line3"
+            tools:ignore="MissingConstraints">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/quizCard"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+       >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="15dp"
+                android:padding="8dp"
+                android:src="@drawable/options" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/mitr_regular"
+                android:text="Quiz"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="18dp"
+                tools:ignore="RtlCompat" />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/videoCard"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/cardColor"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+          >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:src="@drawable/video" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/mitr_regular"
+                android:text="Videos"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="16dp"
+                tools:ignore="RtlCompat" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/conCard"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/cardColor">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/programming"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confreelanguage"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    tools:ignore="RtlCompat" />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/recCard"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="@color/cardColor">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/programming"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recursive"
+                    android:fontFamily="@font/mitr_regular"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="bottom"
+                    tools:ignore="RtlCompat" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line2"
+            tools:ignore="MissingConstraints">
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/booksCard"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+               >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/books" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/mitr_regular"
+                    android:text="Books"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp"
+                    tools:ignore="RtlCompat" />
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/infoCard"
+                android:layout_width="180dp"
+                android:layout_height="200dp"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/cardColor"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+               >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="15dp"
+                    android:padding="5dp"
+                    android:src="@drawable/information" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/mitr_regular"
+                    android:text="About"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp"
+                    tools:ignore="RtlCompat" />
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mitr_regular"
+            android:text="Oguzhan Engineering and Technology
+                 University of Turkmenistan"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.QuizFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/baccolor"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardsorag"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#E6F2FD"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            app:strokeColor="@color/textColor"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:text="10 /"
+                android:textColor="#636161"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/gosmak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="33dp"
+                android:text="10"
+                android:textColor="#636161"
+                android:textSize="16dp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sorag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:fontFamily="@font/mitr_regular"
+                android:gravity="center"
+                android:text="Seyle seyle sorag"
+                android:textColor="@color/textColor"
+                android:textSize="18dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:id="@+id/lineee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardsorag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+            <android.widget.Button
+                android:id="@+id/jogap_A"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/selected_option_border_bg"
+                android:enabled="true"
+                android:fontFamily="@font/mitr_light"
+                android:onClick="jogap_Aclicked"
+                android:text="A) jogap"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+
+            <android.widget.Button
+                android:id="@+id/jogap_B"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/selected_option_border_bg"
+                android:enabled="true"
+                android:fontFamily="@font/mitr_light"
+                android:onClick="jogap_Bclicked"
+                android:text="B) Jogap"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+
+            <android.widget.Button
+                android:id="@+id/jogap_C"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/selected_option_border_bg"
+                android:enabled="true"
+                android:fontFamily="@font/mitr_light"
+                android:onClick="jogap_Cclicked"
+                android:text="C) Jogap"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+
+            <android.widget.Button
+                android:id="@+id/jogap_D"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/selected_option_border_bg"
+                android:enabled="true"
+                android:fontFamily="@font/mitr_light"
+                android:onClick="jogap_Dclicked"
+                android:text="D) Jogap"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/Dowam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lineee"
+            android:layout_margin="30dp"
+            android:backgroundTint="#2CB0EC"
+            android:enabled="true"
+            android:fontFamily="@font/mitr_regular"
+            android:onClick="dowam_clicked"
+            android:text="Continue"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

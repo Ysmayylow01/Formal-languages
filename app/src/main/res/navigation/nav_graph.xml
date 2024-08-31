@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    android:label="Contezt-free language"
+    app:startDestination="@+id/id_home_fragment">
+
+    <fragment
+        android:id="@+id/id_home_fragment"
+        android:name="com.example.formallanguage.fragments.HomeFragment"
+        android:label="Automata and formal language"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/id_reg_fragment"
+        android:name="com.example.formallanguage.fragments.RegLanFragment"
+        android:label="Regular language"
+        tools:layout="@layout/fragment_reg_lan" />
+    <fragment
+        android:id="@+id/id_con_fragment"
+        android:name="com.example.formallanguage.fragments.ConFrLanFragment"
+        android:label="@string/Context"
+        tools:layout="@layout/fragment_con_fr_lan" />
+    <fragment
+        android:id="@+id/id_rec_fragment"
+        android:name="com.example.formallanguage.fragments.RecEnumLanFragment"
+        android:label="@string/recursive"
+        tools:layout="@layout/fragment_rec_enum_lan" />
+    <fragment
+        android:id="@+id/id_quiz_fragment"
+        android:name="com.example.formallanguage.fragments.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/id_pre_fragment"
+        android:name="com.example.formallanguage.fragments.preliminariesFragment"
+        android:label="@string/preliminaries"
+        tools:layout="@layout/fragment_preliminaries" />
+    <activity
+        android:id="@+id/id_activity_info"
+        android:name="com.example.formallanguage.InfoActivity"
+        android:label="About us"
+        tools:layout="@layout/activity_info" />
+    <activity
+        android:id="@+id/id_book_activity"
+        android:name="com.example.formallanguage.BookActivity"
+        android:label="Books"
+        tools:layout="@layout/activity_book" />
+    <activity
+        android:id="@+id/id_video_activity"
+        android:name="com.example.formallanguage.VideoActivity"
+        android:label="Videos"
+        tools:layout="@layout/activity_video" />
+
+</navigation>

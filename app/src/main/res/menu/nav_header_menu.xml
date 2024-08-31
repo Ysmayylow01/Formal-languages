@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+
+        android:checkableBehavior="single">
+
+<item
+    android:id="@+id/id_home_fragment"
+    android:checked="true"
+    android:checkable="true"
+    android:icon="@drawable/home"
+    android:title="Home"
+  />
+        <item
+            android:id="@+id/id_pre_fragment"
+            android:title="@string/preliminaries"
+            android:icon="@drawable/school"
+            android:checkable="true"
+            />
+    <item
+        android:id="@+id/id_reg_fragment"
+        android:title="@string/regular"
+        android:icon="@drawable/school"
+        android:checkable="true"
+        />
+    <item
+        android:id="@+id/id_con_fragment"
+        android:title="@string/confreelanguage"
+        android:icon="@drawable/school"
+        android:checkable="true"
+     />
+        <item
+            android:id="@+id/id_rec_fragment"
+            android:title="@string/recursive"
+            android:checkable="true"
+            android:icon="@drawable/school"
+            />
+
+    </group>
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/id_quiz_fragment"
+                android:title="Quiz"
+                android:checkable="true"
+                android:icon="@drawable/quiz1"
+                />
+            <item
+                android:id="@+id/id_video_activity"
+                android:title="Videos"
+                android:checkable="true"
+                android:icon="@drawable/videomenu"
+                />
+            <item
+                android:id="@+id/id_book_activity"
+                android:title="Books"
+                android:checkable="true"
+                android:icon="@drawable/openbook"
+                />
+
+
+            <item
+                android:id="@+id/id_activity_info"
+                android:title="About"
+                android:checkable="true"
+                android:icon="@drawable/about"
+                />
+        </menu>
+    </item>
+</menu>

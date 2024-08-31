@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Automata and formal languages</string>
+    <string name="splash">Automata and formal languages</string>
+    <string name="preliminaries">Preliminaries</string>
+    <string name="regular">Regular languages</string>
+    <string name="confreelanguage">Context-free languages</string>
+    <string name="home">Home</string>
+    <string name="regularlan">Regular Language</string>
+    <string name="Context">Context-free Languages</string>
+    <string name="recursive">Recursive and recursively enumerable languages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutapp">This app helps you learn automata and formal languages. </string>
+
+</resources>

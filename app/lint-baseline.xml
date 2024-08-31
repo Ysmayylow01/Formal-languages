@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.3.0" type="baseline" client="gradle" dependencies="false" name="AGP (7.3.0)" variant="fatal" version="7.3.0">
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/line3`, already defined earlier in this layout"
+        errorLine1="            android:id=&quot;@+id/line3&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="254"
+            column="13"/>
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="185"
+            column="9"
+            message="Duplicate id `@+id/line3` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/conCard`, already defined earlier in this layout"
+        errorLine1="                android:id=&quot;@+id/conCard&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="264"
+            column="17"/>
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="195"
+            column="13"
+            message="Duplicate id `@+id/conCard` originally defined here"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        message="Duplicate id `@+id/recCard`, already defined earlier in this layout"
+        errorLine1="                android:id=&quot;@+id/recCard&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="292"
+            column="17"/>
+        <location
+            file="src/main/res/layout/fragment_home.xml"
+            line="224"
+            column="13"
+            message="Duplicate id `@+id/recCard` originally defined here"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/formallanguage/BookActivity.kt"
+            line="35"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/formallanguage/fragments/ConFrLanFragment.kt"
+            line="39"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/formallanguage/fragments/RecEnumLanFragment.kt"
+            line="39"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/formallanguage/fragments/RegLanFragment.kt"
+            line="41"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="InvalidSetHasFixedSize"
+        message="When using `setHasFixedSize() in an `RecyclerView`, `wrap_content` cannot be used as \&#xA;a value for `size` in the scrolling direction."
+        errorLine1="        recyclerView.setHasFixedSize(true)"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/formallanguage/fragments/preliminariesFragment.kt"
+            line="39"
+            column="9"/>
+    </issue>
+
+</issues>
